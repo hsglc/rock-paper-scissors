@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="wrapper-container">
+      <div class="score-board-container">
+        <div class="score-board-container-choices">
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+        </div>
+        <div class="scores">
+          <p class="scores-text">Score</p>
+          <p id="score">0</p>
+        </div>
+      </div>
+
+      <div class="selects-container" id="choices">
+        <button class="btn-circle rock pick" data-choices="rock">
+          <span class="wrapper">
+            <img src="../images/icon-rock.svg" alt="" />
+          </span>
+        </button>
+        <button class="btn-circle paper pick" data-choices="paper">
+          <span class="wrapper">
+            <img src="../images/icon-paper.svg" alt="" />
+          </span>
+        </button>
+        <button class="btn-circle scissors pick" data-choices="scissors">
+          <span class="wrapper">
+            <img src="../images/icon-scissors.svg" alt="" />
+          </span>
+        </button>
+      </div>
+      <div class="rules-modal" id="modal">
+        <img src="../images/image-rules.svg" alt="" />
+        <button id="close">
+          <img src="../images/icon-close.svg" alt="" />
+        </button>
+      </div>
+      <button class="btn-rules" id="open">Rules</button>
+    </div>
+    <div class="selection">
+      <div>
+        <h2>You picked</h2>
+        <button class="btn-circle scissors" id="user_select">
+          <span class="wrapper">
+            <img src="../images/icon-scissors.svg" alt="" />
+          </span>
+        </button>
+      </div>
+      <div class="play-again">
+        <p class="big-text">YOU <span id="winner">WIN</span></p>
+        <button class="btn" id="reset">PLAY AGAIN</button>
+      </div>
+      <div class="house-picked">
+        <h2>The House Picked</h2>
+        <button class="btn-circle paper" id="computer_select">
+          <span class="wrapper">
+            <img src="../images/icon-paper.svg" alt="" />
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
