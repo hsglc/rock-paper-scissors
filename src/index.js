@@ -1,4 +1,5 @@
-import { updateScore } from "../src/score.js";
+import { updateScore } from "./score.js";
+
 
 const choices = document.getElementById("choices");
 const selection = document.querySelector(".selection");
