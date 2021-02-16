@@ -27,7 +27,7 @@ const updateSelection = (selectionEl, choice) => {
   selectionEl.classList.remove("paper");
   selectionEl.classList.remove("scissors");
   selectionEl.classList.add(choice);
-  selectionEl.querySelector('img').src = `../images/icon-${choice}.svg`
+  selectionEl.querySelector('img').src = `./images/icon-${choice}.svg`
 };
 
 const getWinner = (userChoice) => {
